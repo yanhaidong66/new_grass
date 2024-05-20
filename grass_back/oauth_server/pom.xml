@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>top.haidong556</groupId>
+        <artifactId>grass-parent</artifactId>
+        <version>1.0</version>
+    </parent>
+    <groupId>top.haidong556</groupId>
+    <artifactId>oauth</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>top.haidong556</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <finalName>oauth</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+<!--                    <descriptors> &lt;!&ndash;描述文件路径&ndash;&gt;-->
+<!--                        <descriptor>src/main/resources/maven-plugin-assembly.xml</descriptor>-->
+<!--                    </descriptors>-->
+                    <descriptorRefs>
+                        <!--给jar包起的别名-->
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>top.haidong556.oauth.OauthApplication</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>19</source>
+                    <target>19</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

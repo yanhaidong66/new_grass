@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5341d59-91f6-4b36-8441-bf4e69dcfe97" name="更改" comment="netty服务器的优化架构" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XEvXdbrAK2eMi5mktg72Tbzbnt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hd/Desktop/grass/grass_back/rocketmq&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/hd/Desktop/grass/grass_back/rocketmq/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b52e8b28c35e7cdf93943e9ffbc18a9d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;5687c8bb-5cd1-4f9c-afcb-04fd221d9fe6&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="top.haidong556.chat_server.service" />
+      <recent name="top.haidong556.oauth.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="top.haidong556.chat_server.service" />
+      <recent name="top.haidong556.chat_server.handler.util" />
+      <recent name="top.haidong556.chat_server.service.impl" />
+      <recent name="top.haidong556.chat_server.repository" />
+      <recent name="top.haidong556.oauth.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="应用程序.ChatServerApplication">
+    <configuration name="ChatServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.ChatServerApplication" />
+      <module name="chat_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZooKeeperService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.service.ZooKeeperService" />
+      <module name="chat_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat_server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="rocketmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisServiceTest.writeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chat_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat_server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong556.chat_server.handler.util" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.handler.util.RedisServiceTest" />
+      <option name="METHOD_NAME" value="writeMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="deal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.deal.DealApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InformationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="information" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.information.InformationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.oauth_server.OauthServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.ChatServerApplication" />
+        <item itemvalue="应用程序.ZooKeeperService" />
+        <item itemvalue="JUnit.RedisServiceTest.writeMessage" />
+        <item itemvalue="应用程序.org.example.Main" />
+        <item itemvalue="应用程序.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a5341d59-91f6-4b36-8441-bf4e69dcfe97" name="更改" comment="" />
+      <created>1698207098072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698207098072</updated>
+      <workItem from="1698207099143" duration="319000" />
+      <workItem from="1698219228272" duration="13000" />
+      <workItem from="1701071225705" duration="15000" />
+      <workItem from="1714616940232" duration="17000" />
+      <workItem from="1714790140536" duration="10801000" />
+      <workItem from="1714805360585" duration="36166000" />
+      <workItem from="1714910173353" duration="6251000" />
+      <workItem from="1714917343780" duration="10727000" />
+      <workItem from="1715000453619" duration="10779000" />
+      <workItem from="1715131524485" duration="3343000" />
+      <workItem from="1715169252667" duration="1293000" />
+      <workItem from="1715175609519" duration="1814000" />
+      <workItem from="1715219714565" duration="2210000" />
+      <workItem from="1715263088450" duration="3844000" />
+      <workItem from="1715351525756" duration="635000" />
+      <workItem from="1715587616005" duration="1284000" />
+      <workItem from="1715657356585" duration="2189000" />
+      <workItem from="1715667405324" duration="8411000" />
+      <workItem from="1715920396791" duration="992000" />
+      <workItem from="1715933855740" duration="944000" />
+      <workItem from="1716014202445" duration="603000" />
+      <workItem from="1716105029246" duration="3848000" />
+      <workItem from="1716115015695" duration="24832000" />
+    </task>
+    <task id="LOCAL-00001" summary="netty服务器的优化架构">
+      <created>1716217603440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716217603440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="netty服务器的优化架构" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty服务器的优化架构" />
+  </component>
+</project>

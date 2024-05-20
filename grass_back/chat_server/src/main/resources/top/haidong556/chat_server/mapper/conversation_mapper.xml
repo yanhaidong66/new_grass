@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.haidong556.chat_server.mapper.ConversationMapper">
+
+
+    <insert id="addConversation" parameterType="Conversation" useGeneratedKeys="true" keyProperty="conversationId">
+        insert into db_chat_server.t_conversation(conversation_sender_id, conversation_receiver_id, conversation_create_time, conversation_modify_time) values (#{conversationSenderId},#{conversationReceiverId},#{conversationCreateTime},#{conversationModifyTime})
+    </insert>
+
+    <select id="getConversationsBySenderId" resultType="Conversation">
+        select * from db_chat_server.t_conversation where conversation_sender_id=#{senderId}
+    </select>
+    <select id="getConversationsByReceiverId" resultType="Conversation">
+        select * from db_chat_server.t_conversation where conversation_receiver_id=#{receiverId}
+    </select>
+
+</mapper>

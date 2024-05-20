@@ -1,0 +1,779 @@
+[15:10:31:189] [INFO] - org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [top.haidong556.oauth.repository.FriendRepositoryTest]: FriendRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[15:10:31:311] [INFO] - org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:248) - Found @SpringBootConfiguration top.haidong556.oauth.OauthApplication for test class top.haidong556.oauth.repository.FriendRepositoryTest
+[15:13:19:892] [INFO] - org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [top.haidong556.oauth.repository.FriendRepositoryTest]: FriendRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[15:13:19:987] [INFO] - org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:248) - Found @SpringBootConfiguration top.haidong556.oauth.OauthApplication for test class top.haidong556.oauth.repository.FriendRepositoryTest
+[15:13:21:720] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:13:21:770] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 21960 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:13:21:774] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:13:22:681] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:291) - Multiple Spring Data modules found, entering strict repository configuration mode
+[15:13:22:684] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:138) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[15:13:22:712] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[15:13:22:957] [INFO] - org.springframework.cloud.context.scope.GenericScope.setSerializationId(GenericScope.java:282) - BeanFactory id=b8b49395-9c46-3340-b635-b8576fd08c52
+[15:13:23:102] [WARN] - org.springframework.core.LocalVariableTableParameterNameDiscoverer.inspectClass(LocalVariableTableParameterNameDiscoverer.java:123) - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: top.haidong556.oauth.aspect.DaoAspect
+[15:13:23:746] [WARN] - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:87) - 
+
+Using generated security password: d58ea5dd-96e8-45a8-9d3e-d7c207483348
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[15:13:23:920] [INFO] - org.springframework.security.web.DefaultSecurityFilterChain.<init>(DefaultSecurityFilterChain.java:54) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67f591c2, org.springframework.security.web.context.SecurityContextHolderFilter@39e3ea78, org.springframework.security.web.header.HeaderWriterFilter@2976ca51, org.springframework.security.web.authentication.logout.LogoutFilter@39a8e2fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43b6cb1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69d2fb0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@284c4f02, org.springframework.security.web.access.ExceptionTranslationFilter@30228de7, org.springframework.security.web.access.intercept.AuthorizationFilter@5fbae40]
+[15:13:24:712] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[15:13:24:712] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[15:13:25:928] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:13:27:962] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:13:28:016] [WARN] - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet(LoadBalancerCacheAutoConfiguration.java:94) - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:13:28:044] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 7.929 seconds (process running for 9.327)
+[15:13:28:627] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:102) - [HttpClientBeanHolder] Start destroying common HttpClient
+[15:13:28:628] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:111) - [HttpClientBeanHolder] Destruction of the end
+[15:15:00:703] [INFO] - org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [top.haidong556.oauth.repository.FriendRepositoryTest]: FriendRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[15:15:00:819] [INFO] - org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:248) - Found @SpringBootConfiguration top.haidong556.oauth.OauthApplication for test class top.haidong556.oauth.repository.FriendRepositoryTest
+[15:15:02:697] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:15:02:745] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 17788 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:15:02:748] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:15:03:543] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:291) - Multiple Spring Data modules found, entering strict repository configuration mode
+[15:15:03:547] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:138) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[15:15:03:574] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[15:15:03:842] [INFO] - org.springframework.cloud.context.scope.GenericScope.setSerializationId(GenericScope.java:282) - BeanFactory id=b8b49395-9c46-3340-b635-b8576fd08c52
+[15:15:03:976] [WARN] - org.springframework.core.LocalVariableTableParameterNameDiscoverer.inspectClass(LocalVariableTableParameterNameDiscoverer.java:123) - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: top.haidong556.oauth.aspect.DaoAspect
+[15:15:04:637] [WARN] - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:87) - 
+
+Using generated security password: 67965e48-79ae-494c-b26a-e03558cf841d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[15:15:04:819] [INFO] - org.springframework.security.web.DefaultSecurityFilterChain.<init>(DefaultSecurityFilterChain.java:54) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f9addd4, org.springframework.security.web.context.SecurityContextHolderFilter@2e159116, org.springframework.security.web.header.HeaderWriterFilter@280d5a82, org.springframework.security.web.authentication.logout.LogoutFilter@2e40fdbd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2976ca51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dbf2da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c43df76, org.springframework.security.web.access.ExceptionTranslationFilter@59f3426f, org.springframework.security.web.access.intercept.AuthorizationFilter@376498da]
+[15:15:05:752] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[15:15:05:752] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[15:15:06:961] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:15:09:012] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:15:09:062] [WARN] - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet(LoadBalancerCacheAutoConfiguration.java:94) - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:15:09:088] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 8.111 seconds (process running for 9.64)
+[15:15:10:037] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:102) - [HttpClientBeanHolder] Start destroying common HttpClient
+[15:15:10:039] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:111) - [HttpClientBeanHolder] Destruction of the end
+[15:16:35:127] [INFO] - org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [top.haidong556.oauth.repository.FriendRepositoryTest]: FriendRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[15:16:35:222] [INFO] - org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:248) - Found @SpringBootConfiguration top.haidong556.oauth.OauthApplication for test class top.haidong556.oauth.repository.FriendRepositoryTest
+[15:16:36:934] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:16:36:981] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 17276 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:16:36:985] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:16:37:835] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:291) - Multiple Spring Data modules found, entering strict repository configuration mode
+[15:16:37:838] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:138) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[15:16:37:870] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+[15:16:38:118] [INFO] - org.springframework.cloud.context.scope.GenericScope.setSerializationId(GenericScope.java:282) - BeanFactory id=b8b49395-9c46-3340-b635-b8576fd08c52
+[15:16:38:238] [WARN] - org.springframework.core.LocalVariableTableParameterNameDiscoverer.inspectClass(LocalVariableTableParameterNameDiscoverer.java:123) - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: top.haidong556.oauth.aspect.DaoAspect
+[15:16:38:921] [WARN] - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:87) - 
+
+Using generated security password: 7c51b113-9f20-4b58-b2ec-1d7531fe053f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[15:16:39:113] [INFO] - org.springframework.security.web.DefaultSecurityFilterChain.<init>(DefaultSecurityFilterChain.java:54) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2335aef2, org.springframework.security.web.context.SecurityContextHolderFilter@2c668c2a, org.springframework.security.web.header.HeaderWriterFilter@f810c18, org.springframework.security.web.authentication.logout.LogoutFilter@69499c6f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51de5efa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d1f23a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17003497, org.springframework.security.web.access.ExceptionTranslationFilter@72001c71, org.springframework.security.web.access.intercept.AuthorizationFilter@527d48db]
+[15:16:39:979] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[15:16:39:979] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[15:16:41:204] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:16:43:312] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:16:43:389] [WARN] - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet(LoadBalancerCacheAutoConfiguration.java:94) - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:16:43:422] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 8.074 seconds (process running for 9.593)
+[15:16:43:963] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:102) - [HttpClientBeanHolder] Start destroying common HttpClient
+[15:16:43:964] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:111) - [HttpClientBeanHolder] Destruction of the end
+[15:20:45:350] [INFO] - org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [top.haidong556.oauth.repository.FriendRepositoryTest]: FriendRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[15:20:45:446] [INFO] - org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:248) - Found @SpringBootConfiguration top.haidong556.oauth.OauthApplication for test class top.haidong556.oauth.repository.FriendRepositoryTest
+[15:20:47:132] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:20:47:181] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 12616 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:20:47:184] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:20:47:917] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:291) - Multiple Spring Data modules found, entering strict repository configuration mode
+[15:20:47:920] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:138) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[15:20:47:947] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+[15:20:48:177] [INFO] - org.springframework.cloud.context.scope.GenericScope.setSerializationId(GenericScope.java:282) - BeanFactory id=b8b49395-9c46-3340-b635-b8576fd08c52
+[15:20:48:302] [WARN] - org.springframework.core.LocalVariableTableParameterNameDiscoverer.inspectClass(LocalVariableTableParameterNameDiscoverer.java:123) - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: top.haidong556.oauth.aspect.DaoAspect
+[15:20:48:929] [WARN] - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword(UserDetailsServiceAutoConfiguration.java:87) - 
+
+Using generated security password: 32e454ce-a7d3-4fb4-b4d9-3109dad3fd09
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[15:20:49:070] [INFO] - org.springframework.security.web.DefaultSecurityFilterChain.<init>(DefaultSecurityFilterChain.java:54) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a43a88e, org.springframework.security.web.context.SecurityContextHolderFilter@3bf5911d, org.springframework.security.web.header.HeaderWriterFilter@1de08775, org.springframework.security.web.authentication.logout.LogoutFilter@ff2266c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cc93da4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e4ecdf8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51f34185, org.springframework.security.web.access.ExceptionTranslationFilter@d1f23a0, org.springframework.security.web.access.intercept.AuthorizationFilter@284c4f02]
+[15:20:49:850] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[15:20:49:850] [INFO] - com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager.init(ClientAuthPluginManager.java:56) - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[15:20:51:059] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:20:53:094] [INFO] - org.springframework.cloud.commons.util.InetUtils.convertAddress(InetUtils.java:170) - Cannot determine local hostname
+[15:20:53:140] [WARN] - org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger.afterPropertiesSet(LoadBalancerCacheAutoConfiguration.java:94) - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[15:20:53:172] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 7.606 seconds (process running for 8.973)
+[15:20:54:074] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:102) - [HttpClientBeanHolder] Start destroying common HttpClient
+[15:20:54:075] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:111) - [HttpClientBeanHolder] Destruction of the end
+[15:38:34:856] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:38:34:906] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 19840 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:38:34:910] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:38:35:287] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.116 seconds (process running for 3.59)
+[15:41:33:566] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:41:33:614] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 17336 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:41:33:618] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:41:33:969] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 2.047 seconds (process running for 3.382)
+[15:42:25:854] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:42:25:904] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 18628 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:42:25:908] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:42:26:222] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.998 seconds (process running for 3.349)
+[15:42:50:084] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:42:50:136] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 14292 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:42:50:140] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:42:50:459] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.967 seconds (process running for 3.286)
+[15:44:51:770] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:44:51:820] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 12192 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:44:51:825] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:44:52:208] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.064 seconds (process running for 3.541)
+[15:46:30:649] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:46:30:700] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 20812 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:46:30:704] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:46:31:047] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.973 seconds (process running for 3.276)
+[15:47:14:803] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:47:14:850] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 22072 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:47:14:854] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:47:15:212] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.982 seconds (process running for 3.452)
+[15:48:17:949] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:48:18:001] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 21232 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:48:18:004] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:48:18:350] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.984 seconds (process running for 3.28)
+[15:48:43:846] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:48:43:903] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 2844 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:48:43:907] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:48:44:249] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.03 seconds (process running for 3.415)
+[15:51:29:670] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:51:29:748] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 11796 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:51:29:763] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:51:30:151] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.098 seconds (process running for 3.414)
+[15:57:07:022] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[15:57:07:075] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 11552 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[15:57:07:079] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[15:57:07:431] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.981 seconds (process running for 3.33)
+[16:00:58:696] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:00:58:743] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 6912 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:00:58:747] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:00:59:082] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.968 seconds (process running for 3.254)
+[16:02:52:197] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:02:52:246] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 6192 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:02:52:250] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:02:52:575] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.958 seconds (process running for 3.268)
+[16:03:38:212] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:03:38:263] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 18084 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:03:38:266] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:03:38:593] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.037 seconds (process running for 3.38)
+[16:04:13:871] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:04:13:927] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 7740 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:04:13:932] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:04:14:307] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.021 seconds (process running for 3.317)
+[16:04:25:748] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:04:25:797] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 6960 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:04:25:801] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:04:26:130] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.974 seconds (process running for 3.32)
+[16:09:32:459] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:09:32:511] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 12976 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:09:32:515] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:09:32:853] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.993 seconds (process running for 3.297)
+[16:10:20:892] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:10:20:942] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 17704 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:10:20:945] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:10:21:304] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.993 seconds (process running for 3.275)
+[16:21:23:370] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:21:23:421] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 21776 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:21:23:424] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:21:23:798] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.006 seconds (process running for 3.33)
+[16:21:48:424] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:21:48:470] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 10272 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:21:48:474] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:21:48:808] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.96 seconds (process running for 3.354)
+[16:22:56:138] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:22:56:195] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 17432 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:22:56:199] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:22:56:532] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.963 seconds (process running for 3.344)
+[16:24:02:685] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:24:02:733] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 12868 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:24:02:738] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:24:03:073] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.965 seconds (process running for 3.298)
+[16:27:55:374] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:27:55:423] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 3988 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:27:55:428] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:27:55:787] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.055 seconds (process running for 3.495)
+[16:28:57:557] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:28:57:606] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 18308 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:28:57:609] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:28:57:937] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.96 seconds (process running for 3.295)
+[16:30:10:836] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:30:10:889] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 20500 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:30:10:896] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:30:11:268] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 2.046 seconds (process running for 3.517)
+[16:30:38:598] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:30:38:645] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendRepositoryTest using Java 20.0.1 with PID 16816 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:30:38:649] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:30:38:972] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendRepositoryTest in 1.964 seconds (process running for 3.285)
+[16:49:50:349] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:49:50:396] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 812 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:49:50:400] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:49:50:550] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendServiceImpl': Unsatisfied dependency expressed through field 'friendRepository': No qualifying bean of type 'top.haidong556.oauth.repository.FriendRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[16:49:50:598] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field friendRepository in top.haidong556.oauth.service.impl.FriendServiceImpl required a bean of type 'top.haidong556.oauth.repository.FriendRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'top.haidong556.oauth.repository.FriendRepository' in your configuration.
+
+[16:49:50:608] [ERROR] - org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:245) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [top.haidong556.oauth.service.FriendServiceTest@34d4860f]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@38792286 testClass = top.haidong556.oauth.service.FriendServiceTest, locations = [], classes = [top.haidong556.oauth.service.FriendService, top.haidong556.oauth.service.impl.FriendServiceImpl, top.haidong556.oauth.mapper.FriendMapper], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6f603e89, org.springframework.boot.test.context.SpringBootTestAnnotation@44a81613], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:143) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) ~[junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendServiceImpl': Unsatisfied dependency expressed through field 'friendRepository': No qualifying bean of type 'top.haidong556.oauth.repository.FriendRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:716) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1388) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119) ~[spring-test-6.0.11.jar:6.0.11]
+	... 72 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'top.haidong556.oauth.repository.FriendRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1824) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1383) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1388) ~[spring-boot-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.0.9.jar:3.0.9]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119) ~[spring-test-6.0.11.jar:6.0.11]
+	... 72 more
+[16:50:36:103] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:50:36:152] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 19600 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:50:36:157] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:50:36:495] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 1.953 seconds (process running for 3.259)
+[16:50:36:519] [ERROR] - org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:245) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [top.haidong556.oauth.service.FriendServiceTest@80bfa9d]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'top.haidong556.oauth.service.FriendServiceTest': Unsatisfied dependency expressed through field 'userRepository': No qualifying bean of type 'top.haidong556.oauth.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:716) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:396) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.11.jar:6.0.11]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) ~[junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'top.haidong556.oauth.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1824) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1383) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 76 more
+[16:51:49:953] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:51:49:999] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 7432 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:51:50:003] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:51:50:354] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 1.987 seconds (process running for 3.288)
+[16:52:31:799] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:52:31:846] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 4648 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:52:31:850] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:52:32:200] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 1.984 seconds (process running for 3.295)
+[16:52:51:294] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:52:51:343] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 3392 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:52:51:347] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:52:51:693] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 1.98 seconds (process running for 3.284)
+[16:54:53:749] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:54:53:808] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 17420 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:54:53:812] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:54:54:159] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 2.045 seconds (process running for 3.437)
+[16:57:34:646] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:57:34:700] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 11628 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:57:34:712] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:57:35:074] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 2.002 seconds (process running for 3.289)
+[16:57:57:185] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[16:57:57:245] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting FriendServiceTest using Java 20.0.1 with PID 15464 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[16:57:57:249] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[16:57:57:583] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started FriendServiceTest in 2.042 seconds (process running for 3.385)

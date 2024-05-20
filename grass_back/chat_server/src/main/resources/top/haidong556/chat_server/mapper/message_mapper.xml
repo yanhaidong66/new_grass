@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.haidong556.chat_server.mapper.MessageMapper">
+
+    <select id="getMessageById" resultType="Message" parameterType="long">
+        select * from t_message where message_id = #{messageId}
+    </select>
+    <select id="getMessagesByConversationId" resultType="Message">
+        select * from t_message where message_conversation_id=#{conversationId}
+    </select>
+    <insert id="addMessage" parameterType="Message">
+        insert into t_message(message_conversation_id, message_create_time, message_sender_id, message_receiver_id, message_content, message_read) values (#{messageConversationId},#{messageCreateTime},#{messageSenderId},#{messageReceiverId},#{messageContent},#{messageRead})
+    </insert>
+
+    <select id="getMessagesBySenderId" resultType="Message" parameterType="long">
+        select * from t_message where message_sender_id=#{senderId}
+    </select>
+
+    <select id="getMessagesByReceiverId" resultType="Message" parameterType="long">
+        select * from t_message where message_receiver_id=#{receiverId}
+    </select>
+</mapper>

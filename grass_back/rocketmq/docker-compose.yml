@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  namesrv:
+    image: apache/rocketmq:4.8.0
+    container_name: rmqnamesrv
+    ports:
+      - "9876:9876"
+    environment:
+      - "JAVA_OPTS=-Duser.home=/opt"
+      - "NAMESRV_ADDR=127.0.0.1:9876"
+    command: sh mqnamesrv
+
+  broker:
+    image: apache/rocketmq:4.8.0
+    container_name: rmqbroker
+    ports:
+      - "10911:10911"
+      - "10909:10909"
+    environment:
+      - "JAVA_OPTS=-Duser.home=/opt"
+      - "NAMESRV_ADDR=rmqnamesrv:9876"
+      - "BROKER_IP1=127.0.0.1"
+    depends_on:
+      - namesrv
+    command: sh mqbroker -n rmqnamesrv:9876 -c /etc/rocketmq/broker.conf
+    volumes:
+      - ./broker.conf:/etc/rocketmq/broker.conf
+
+  console:
+    image: styletang/rocketmq-console-ng
+    container_name: rmqconsole
+    ports:
+      - "8080:8080"
+    environment:
+      - "JAVA_OPTS=-Drocketmq.namesrv.addr=rmqnamesrv:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false"
+    depends_on:
+      - namesrv
+      - broker
+
+volumes:
+  rmq_data:

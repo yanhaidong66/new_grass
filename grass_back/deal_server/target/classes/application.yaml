@@ -1,0 +1,14 @@
+spring:
+  config:
+    import: nacos:deal-server
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: deal-server
+server:
+  port: 8080
+

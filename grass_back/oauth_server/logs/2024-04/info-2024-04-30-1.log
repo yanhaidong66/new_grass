@@ -1,0 +1,96 @@
+[09:45:09:769] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:45:09:822] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 10752 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:45:09:826] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:45:10:161] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.97 seconds (process running for 3.325)
+[09:46:21:306] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:46:21:353] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 21092 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:46:21:357] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:46:21:676] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.941 seconds (process running for 3.2)
+[09:47:02:508] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:47:02:560] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 10948 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:47:02:564] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:47:02:896] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.91 seconds (process running for 3.19)
+[09:48:08:554] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:08:610] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 20632 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:48:08:614] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:48:08:937] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.927 seconds (process running for 3.279)
+[09:48:16:597] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:16:647] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 14264 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:48:16:652] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:48:16:966] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.898 seconds (process running for 3.186)
+[09:48:24:490] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:24:544] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 6096 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:48:24:548] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:48:24:842] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.911 seconds (process running for 3.282)
+[09:48:36:711] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:36:761] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 20780 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[09:48:36:767] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[09:48:37:065] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 1.898 seconds (process running for 3.226)
+[14:34:43:511] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[14:34:43:562] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:51) - Starting UserServiceImplTest using Java 20.0.1 with PID 24476 (started by hd in C:\Users\hd\Desktop\grass\grass_back\oauth_server)
+[14:34:43:566] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:632) - No active profile set, falling back to 1 default profile: "default"
+[14:34:43:908] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started UserServiceImplTest in 2.009 seconds (process running for 3.444)

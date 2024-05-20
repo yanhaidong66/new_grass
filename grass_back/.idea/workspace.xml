@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="security section not complete">
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/entity/MessageUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/handler/PersistentMessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/handler/UserStateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/handler/util/ChannelUserMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/service/ConversationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/service/impl/ConversationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat_server/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/chat_server/service/impl/ConversationServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/logs/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/logs/test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/logs/warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/chat/chat_server/config/RestTemplateFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/entity/WebsocketChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/CustomExceptionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/ExceptionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/GeneralException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/chat/gateway/TokenAuthenticationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/oauth/OauthFriendException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/oauth/OauthJwtException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/oauth/OauthUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/response/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/response/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/response/SuccessResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/util/NacosServiceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deal_server/src/main/java/top/haidong556/deal/aspect/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/config/MyCorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/config/RouteConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/entity/JwtUserMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/entity/UserServerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/filter/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/filter/HttpVerificationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/filter/LogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/filter/MatchingServerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/filter/OauthLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/filter/WebsocketVerificationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/mapper/MappingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/repository/MappingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/chat/gateway/util/Authenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/top/haidong556/chat/gateway/mapper/mapping_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/user_server_map.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/top/haidong556/filter/HttpVerificationFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_server/src/main/java/top/haidong556/information/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_server/src/main/java/top/haidong556/information/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2024-04/error-2024-04-30-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2024-04/info-2024-04-29-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2024-04/info-2024-04-30-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2024-04/warn-2024-04-29-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2024-04/warn-2024-04-30-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/logs/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/logs/test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/logs/warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/aspect/DaoAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/config/ReplaceRequestInputStreamFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/config/RequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/config/SetRequestIdFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/controller/FriendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/dto/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/entity/Friend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/interceptor/LogInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/mapper/FriendMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/repository/FriendRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/FriendService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/impl/FriendServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/oauth.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/top/haidong556/oauth/mapper/friend_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/LogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/repository/FriendRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/service/FriendServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/ChatServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/codec/MessageCodec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/codec/PackageCodec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/proto/messageProto/MessageProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/proto/messageProto/message.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/proto/networkPackageProto/PackageProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/proto/networkPackageProto/package.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/rabbitMq/RabbitMqUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/sqlsession/MySqlSessionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/MainServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/PackageDecodeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/PackageEncodeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/PackageReturnHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/util/Disconnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/util/HalfPackageDecodeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/util/MessageDBWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/util/MessageSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/util/UserMessagePuller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/common/websocket/handler/util/UserState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/config/MyConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/entity/Conversation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/entity/Friend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/entity/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/entity/MessagesPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/entity/MyUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/mapper/ConversationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/mapper/MessageMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/myException/ErrorCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/repository/ConversationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/repository/FriendRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/repository/MessageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/repository/RedisRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/service/NacosService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/service/WebSocketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/resources/chat_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/chat_server/src/main/resources/chat_server_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_server/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/resources/top/haidong556/mapper/conversation_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/resources/top/haidong556/mapper/message_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/main/resources/top/haidong556/mapper/user_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/common/codec/MessageCodecTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/common/codec/PackageCodecTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/common/proto/networkPackageProto/MessageProtoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/common/rabbitMq/RabbitMqUtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/common/redis/JedisPoolTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/mapper/MessageMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/repository/ConversationRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/repository/MessageRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/repository/RedisRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/service/NacosServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/config/JedisPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/chat/chat_server/config/JedisPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/config/RestTemplateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/exception/AllExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/exception/AllExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/exception/BaseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/exception/EnumException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/exception/ExceptionAssert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/response/BaseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/top/haidong556/response/ExceptionResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deal_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deal_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deal_server/src/main/java/top/haidong556/deal/DealApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/deal_server/src/main/java/top/haidong556/deal/DealApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deal_server/target/classes/top/haidong556/deal/DealApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/deal_server/target/classes/top/haidong556/deal/DealApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/config/RouteConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/filter/AuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/filter/CorsFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/test/java/top/haidong556/config/RouteConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/test/java/top/haidong556/chat/chat_server/config/RouteConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/test/java/top/haidong556/filter/AuthenticationFilterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/information_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/information_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information_server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/information_server/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/OauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/OauthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/common/MySqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/top/haidong556/chat_server/common/util/MySqlSessionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/entity/Jwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/entity/Jwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/entity/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/entity/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/MyAuthenticationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/MyLoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtKeyProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtKeyProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/MyKeyPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/security/key/MyKeyPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/resources/key-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/key-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/resources/mybatis-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/mybatis-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/resources/top/haidong556/oauth/mapper/user_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/top/haidong556/oauth/mapper/user_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/resources/user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/OauthApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/security/MyAuthenticationHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/security/key/JwtFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/security/key/JwtFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/security/key/JwtUpdaterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/security/key/JwtUpdaterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/service/impl/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/service/impl/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/key-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/key-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/mybatis-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/mybatis-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/OauthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/OauthApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/common/MySqlSessionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/entity/Jwt.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/entity/Jwt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/entity/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/entity/MyUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/mapper/user_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/mapper/user_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/MyAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/MyLoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/SecurityConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/JwtFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/JwtFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/JwtKeyProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/JwtKeyProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/JwtUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/JwtUpdater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/MyKeyPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/security/key/MyKeyPair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/classes/top/haidong556/oauth/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/classes/user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/OauthApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/security/MyAuthenticationHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/security/key/JwtFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/security/key/JwtFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/security/key/JwtUpdaterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/security/key/JwtUpdaterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/service/impl/UserServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/target/test-classes/top/haidong556/oauth/service/impl/UserServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XDJCwqQb0U6aetzmyqfZVwMcb8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "OverrideImplement.combined": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "D:/Desktop/grass/grass_back/chat_server/src/main/java/top/haidong556/chat/chat_server/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "copyright",
+    "spring.configuration.checksum": "30ce0416f58b8c0238a99abd5dce80ad",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "a45c3735-1a1b-427b-bbca-c8837cd82339",
+      "126e6f3b-95de-48dc-8a3b-013f9f289dc1",
+      "116ef52d-c1da-4f5d-812f-7d9755c1cccf"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="top.haidong556.deal.payment" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\grass\grass_back\chat_server\src\main\java\top\haidong556\chat\chat_server\config" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\oauth_server\src\main\resources" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\common\src\main\resources" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\common" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\oauth_server\src\main\resources" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\oauth_server" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\common\src\main\resources" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\chat_server\src\main\java\top\haidong556\common\proto\messageProto" />
+      <recent name="C:\Users\hd\Desktop\grass\grass_back\chat_server\src\main\java\top\haidong556\common\proto" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="top.haidong556.oauth.config" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="top.haidong556" />
+      <recent name="top.haidong556.config" />
+      <recent name="top.haidong556.repository" />
+      <recent name="top.haidong556.common.proto.networkPackageProto" />
+      <recent name="top.haidong556.proto.messageProto" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="top.haidong556.filter" />
+      <recent name="top.haidong556.oauth.security.key" />
+      <recent name="top.haidong556.oauth.service.impl" />
+      <recent name="top.haidong556.config" />
+      <recent name="top.haidong556.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.haidong556.oauth" />
+      <recent name="top.haidong556.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat.chat_server.Main" />
+      <module name="grass_back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat.chat_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user_server_map.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/gateway/src/main/resources/user_server_map.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="116ef52d-c1da-4f5d-812f-7d9755c1cccf" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HttpVerificationFilterTest.verifyAndGetMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong556.filter" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.filter.HttpVerificationFilterTest" />
+      <option name="METHOD_NAME" value="verifyAndGetMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong556.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testGetUserByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong556.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetUserByUserName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="common" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="oauth [jar:jar] (1)" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jar:jar" />
+                <option value="pom.xml" />
+              </list>
+            </option>
+            <option name="pomFileName" value="-Dexec.mainClass=OauthApplication.class" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/oauth_server" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="oauth [jar:jar] (2)" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jar:jar" />
+                <option value="pom.xml" />
+              </list>
+            </option>
+            <option name="pomFileName" value="-Dexec.mainClass=OauthApplication.class" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/oauth_server" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="oauth [jar:jar]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jar:jar" />
+                <option value="pom.xml" />
+              </list>
+            </option>
+            <option name="pomFileName" value="-Dexec.mainClass=OauthApplication.class" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/oauth_server" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="oauth [jar:jar]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jar:jar" />
+                <option value="pom.xml" />
+              </list>
+            </option>
+            <option name="pomFileName" value="-Dexec.mainClass=OauthApplication.class" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/oauth_server" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="CommenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.commen.CommenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="deal_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.deal.DealApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.chat.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InformationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="information_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.information.InformationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oauth" />
+      <option name="PROGRAM_PARAMETERS" value="useNacos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.oauth.OauthApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.HttpVerificationFilterTest.verifyAndGetMessage" />
+      <item itemvalue="JUnit.UserServiceImplTest.testAddUser" />
+      <item itemvalue="JUnit.UserServiceImplTest.testGetUserByUserName" />
+      <item itemvalue="Maven.oauth [jar:jar]" />
+      <item itemvalue="Maven.oauth [jar:jar] (1)" />
+      <item itemvalue="Maven.oauth [jar:jar] (2)" />
+      <item itemvalue="Spring Boot.CommenApplication" />
+      <item itemvalue="Spring Boot.CommonApplication" />
+      <item itemvalue="Spring Boot.DealApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.InformationApplication" />
+      <item itemvalue="Spring Boot.OauthApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="应用程序.Main" />
+      <item itemvalue="数据库脚本.user_server_map.sql" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Main" />
+        <item itemvalue="数据库脚本.user_server_map.sql" />
+        <item itemvalue="JUnit.UserServiceImplTest.testAddUser" />
+        <item itemvalue="JUnit.HttpVerificationFilterTest.verifyAndGetMessage" />
+        <item itemvalue="JUnit.UserServiceImplTest.testGetUserByUserName" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="" />
+      <created>1698157594281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698157594281</updated>
+      <workItem from="1698157595556" duration="1067000" />
+      <workItem from="1698210695212" duration="2836000" />
+      <workItem from="1698219242502" duration="94000" />
+      <workItem from="1698219370612" duration="16391000" />
+      <workItem from="1698278990815" duration="6475000" />
+      <workItem from="1698291160752" duration="19031000" />
+      <workItem from="1698367860124" duration="15184000" />
+      <workItem from="1698389870473" duration="3211000" />
+      <workItem from="1698396337178" duration="12225000" />
+      <workItem from="1698453573757" duration="5230000" />
+      <workItem from="1698737433342" duration="48000" />
+      <workItem from="1698737491534" duration="20000" />
+      <workItem from="1701064163352" duration="3676000" />
+      <workItem from="1701071253778" duration="2065000" />
+      <workItem from="1701075775897" duration="1990000" />
+      <workItem from="1701077783474" duration="5562000" />
+      <workItem from="1701083414433" duration="1085000" />
+      <workItem from="1701084516040" duration="106000" />
+      <workItem from="1701084847881" duration="3129000" />
+      <workItem from="1701100480413" duration="362000" />
+      <workItem from="1701101301539" duration="36000" />
+      <workItem from="1701134019730" duration="784000" />
+      <workItem from="1701142718877" duration="4192000" />
+      <workItem from="1705584703374" duration="101000" />
+      <workItem from="1705584942216" duration="4799000" />
+      <workItem from="1705621784827" duration="6013000" />
+      <workItem from="1705659724942" duration="601000" />
+      <workItem from="1705831744281" duration="386000" />
+      <workItem from="1706023513505" duration="19000" />
+      <workItem from="1706346956703" duration="1241000" />
+      <workItem from="1707781729599" duration="8621000" />
+      <workItem from="1707904874867" duration="6923000" />
+      <workItem from="1707955964800" duration="12394000" />
+      <workItem from="1708042799739" duration="27752000" />
+      <workItem from="1708132957910" duration="62929000" />
+      <workItem from="1708331194723" duration="2662000" />
+      <workItem from="1708338483894" duration="1008000" />
+      <workItem from="1708355148918" duration="46424000" />
+      <workItem from="1708822302103" duration="4861000" />
+      <workItem from="1708914974188" duration="3075000" />
+      <workItem from="1709001213677" duration="1435000" />
+      <workItem from="1709002659803" duration="2830000" />
+      <workItem from="1709116081406" duration="7922000" />
+      <workItem from="1709182312404" duration="20522000" />
+      <workItem from="1709267813786" duration="18247000" />
+      <workItem from="1709300097794" duration="333000" />
+      <workItem from="1709344377085" duration="6933000" />
+      <workItem from="1710071753317" duration="612000" />
+      <workItem from="1710394150000" duration="371000" />
+      <workItem from="1710418442901" duration="12344000" />
+      <workItem from="1710462055571" duration="21893000" />
+      <workItem from="1710506727554" duration="7334000" />
+      <workItem from="1710552669392" duration="41668000" />
+      <workItem from="1711067233225" duration="40000" />
+      <workItem from="1711513090685" duration="8181000" />
+      <workItem from="1712041369075" duration="2022000" />
+      <workItem from="1712195326026" duration="942000" />
+      <workItem from="1713140138705" duration="1329000" />
+      <workItem from="1713176599268" duration="409000" />
+      <workItem from="1713185686212" duration="7241000" />
+      <workItem from="1713763222228" duration="3903000" />
+      <workItem from="1713930922655" duration="4828000" />
+      <workItem from="1713947157898" duration="4854000" />
+      <workItem from="1713956140511" duration="111000" />
+      <workItem from="1714009892006" duration="136000" />
+      <workItem from="1714010038703" duration="282000" />
+      <workItem from="1714010344201" duration="1328000" />
+      <workItem from="1714011843433" duration="18274000" />
+      <workItem from="1714035231838" duration="14020000" />
+      <workItem from="1714096195472" duration="17263000" />
+      <workItem from="1714177609070" duration="36440000" />
+      <workItem from="1714314069729" duration="619000" />
+      <workItem from="1714358260712" duration="21361000" />
+      <workItem from="1714439054982" duration="57278000" />
+      <workItem from="1714612646030" duration="2412000" />
+      <workItem from="1714616525958" duration="85000" />
+      <workItem from="1714616922848" duration="340000" />
+      <workItem from="1714617271632" duration="14103000" />
+      <workItem from="1714636453065" duration="16704000" />
+      <workItem from="1714805382654" duration="79000" />
+      <workItem from="1715000438416" duration="13000" />
+    </task>
+    <task id="LOCAL-00001" summary="key section is done">
+      <created>1698390043937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698390043937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="security section not complete">
+      <created>1698418884344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698418884344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/deal" />
+      <path value="$PROJECT_DIR$/information" />
+      <path value="$PROJECT_DIR$/oauth" />
+      <path value="$PROJECT_DIR$/user" />
+      <path value="$PROJECT_DIR$/zookeeper" />
+      <path value="$PROJECT_DIR$/common" />
+      <path value="$PROJECT_DIR$/eureka" />
+      <path value="$PROJECT_DIR$/gateway" />
+    </ignored-roots>
+    <MESSAGE value="key section is done" />
+    <MESSAGE value="security section not complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="security section not complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat_server/src/test/java/top/haidong556/chat/chat_server/repository/ConversationRepositoryTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.15.0/amqp-client-5.15.0.jar!/com/rabbitmq/client/impl/AMQConnection.class</url>
+          <line>453</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.15.0/amqp-client-5.15.0.jar!/com/rabbitmq/client/impl/ChannelManager.class</url>
+          <line>165</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.94.Final/netty-codec-4.1.94.Final.jar!/io/netty/handler/codec/protobuf/ProtobufVarint32LengthFieldPrepender.class</url>
+          <line>18</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chat_server/src/main/java/top/haidong556/chat/chat_server/common/websocket/handler/util/HalfPackageDecodeHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.dao.DaoAuthenticationProvider" memberName="userDetailsPasswordService" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/grass_back$JwtFactoryTest_verify.ic" NAME="JwtFactoryTest.verify 覆盖结果" MODIFIED="1710477129517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>top.haidong556.oauth.security.key.*</FILTER>
+    </SUITE>
+  </component>
+</project>

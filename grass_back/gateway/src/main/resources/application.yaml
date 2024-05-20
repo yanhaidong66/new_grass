@@ -1,0 +1,18 @@
+spring:
+  config:
+    import:
+      - nacos:gateway-server.properties
+      - nacos:public-key-now.properties
+      - nacos:public-key-pre.properties
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+        namespace: public
+      config:
+        server-addr: http://localhost:8848
+  application:
+    name: gateway-server
+server:
+  port: 9999
+

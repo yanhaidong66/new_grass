@@ -1,0 +1,72 @@
+[09:45:09:769] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:46:21:306] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:47:02:508] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:08:554] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:16:597] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:24:490] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[09:48:36:711] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[14:34:43:511] [WARN] - org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning(DuplicateJsonObjectContextCustomizerFactory.java:78) - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hd/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hd/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+

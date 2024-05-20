@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="security section not complete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/entity/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/entity/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/resources/mybatis-conf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/resources/mybatis-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/resources/top/haidong/oauth/mapper/user_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/resources/top/haidong/oauth/mapper/user_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/service/impl/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/service/impl/UserServiceImplTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XDJCwqQb0U6aetzmyqfZVwMcb8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;OverrideImplement.combined&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f4a1418e0c9f8977ce1ca264cb471d67&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="top.haidong.oauth.service.impl" />
+      <recent name="top.haidong.oauth.security" />
+      <recent name="top.haidong.oauth.security.key" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserServiceImplTest.getUserByUserName">
+    <configuration name="JwtFactoryTest.verify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.security.key.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.security.key" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.security.key.JwtFactoryTest" />
+      <option name="METHOD_NAME" value="verify" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.getUserByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="getUserByUserName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.loadUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="loadUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.updatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="updatePassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="deal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.deal.DealApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InformationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="information" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.information.InformationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oauth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.oauth.OauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceImplTest.getUserByUserName" />
+        <item itemvalue="JUnit.UserServiceImplTest.addUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.loadUserByUsername" />
+        <item itemvalue="JUnit.UserServiceImplTest.updatePassword" />
+        <item itemvalue="JUnit.JwtFactoryTest.verify" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="" />
+      <created>1698157594281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698157594281</updated>
+      <workItem from="1698157595556" duration="1067000" />
+      <workItem from="1698210695212" duration="2836000" />
+      <workItem from="1698219242502" duration="94000" />
+      <workItem from="1698219370612" duration="16391000" />
+      <workItem from="1698278990815" duration="6475000" />
+      <workItem from="1698291160752" duration="19031000" />
+      <workItem from="1698367860124" duration="15184000" />
+      <workItem from="1698389870473" duration="3211000" />
+      <workItem from="1698396337178" duration="12225000" />
+      <workItem from="1698453573757" duration="5230000" />
+    </task>
+    <task id="LOCAL-00001" summary="key section is done">
+      <created>1698390043937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698390043937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="security section not complete">
+      <created>1698418884344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698418884344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/deal" />
+      <path value="$PROJECT_DIR$/information" />
+      <path value="$PROJECT_DIR$/oauth" />
+      <path value="$PROJECT_DIR$/user" />
+      <path value="$PROJECT_DIR$/zookeeper" />
+    </ignored-roots>
+    <MESSAGE value="key section is done" />
+    <MESSAGE value="security section not complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="security section not complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/service/impl/UserServiceImplTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/UserServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+syntax = "proto3"; // 使用 Protobuf 3 语法
+
+
+message Package {
+  int64 timestamp =1;//时间戳
+  string type = 2; // 字符串字段
+  int32 messageNum = 3;    // 整数字段
+  repeated Message message = 4; // 重复的字符串字段
+}
+
+message Message{
+  int64 messageId=1;
+  int64 messageConversationId=2;
+  int64 messageCreateTime=3;
+  int64 messageSenderId=4;
+  int64 messageReceiverId=5;
+  string messageContext=6;
+  bool messageRead=7;
+}
