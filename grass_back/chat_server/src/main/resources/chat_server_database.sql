@@ -3,7 +3,7 @@ create database db_chat_server;
 use db_chat_server;
 
 create table t_conversation(
-    conversation_id bigint  primary key auto_increment,
+    conversation_id bigint  primary key not null ,
     conversation_sender_id bigint  not null ,
     conversation_receiver_id bigint not null,
     conversation_create_time bigint not null ,
@@ -14,7 +14,7 @@ create table t_conversation(
 
 );
 create table t_message(
-    message_id bigint  primary key auto_increment,
+    message_id bigint  primary key not null ,
     message_conversation_id bigint  not null ,
     message_create_time bigint not null ,
     message_sender_id bigint  not null ,

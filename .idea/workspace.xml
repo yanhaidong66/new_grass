@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5341d59-91f6-4b36-8441-bf4e69dcfe97" name="更改" comment="netty服务器的优化架构" />
+    <list default="true" id="a5341d59-91f6-4b36-8441-bf4e69dcfe97" name="更改" comment="netty服务器的优化架构">
+      <change afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/common/UniqueIDGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/entity/MessagesPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/entity/MessagesPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/CreateConversationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/CreateConversationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/PersistentMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/PersistentMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/SendHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/SendHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/ConsistentHashLoadBalancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/ConsistentHashLoadBalancerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/RocketmqService.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/RocketmqService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/top/haidong556/chat_server/mapper/conversation_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/top/haidong556/chat_server/mapper/conversation_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/top/haidong556/chat_server/mapper/message_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/top/haidong556/chat_server/mapper/message_mapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +111,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.ChatServerApplication">
+  <component name="RunManager" selected="数据库脚本.chat_server_database.sql">
     <configuration name="ChatServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.ChatServerApplication" />
       <module name="chat_server" />
@@ -113,8 +125,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="UniqueIDGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.common.UniqueIDGenerator" />
+      <module name="chat_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat_server.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,18 +151,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="rocketmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="chat_server_database.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server_database.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="5687c8bb-5cd1-4f9c-afcb-04fd221d9fe6" />
+      <method v="2" />
     </configuration>
     <configuration name="RedisServiceTest.writeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chat_server" />
@@ -191,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="数据库脚本.chat_server_database.sql" />
+        <item itemvalue="应用程序.UniqueIDGenerator" />
         <item itemvalue="应用程序.ChatServerApplication" />
         <item itemvalue="应用程序.ZooKeeperService" />
         <item itemvalue="JUnit.RedisServiceTest.writeMessage" />
-        <item itemvalue="应用程序.org.example.Main" />
-        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +242,7 @@
       <workItem from="1716014202445" duration="603000" />
       <workItem from="1716105029246" duration="3848000" />
       <workItem from="1716115015695" duration="24832000" />
+      <workItem from="1716218220438" duration="5158000" />
     </task>
     <task id="LOCAL-00001" summary="netty服务器的优化架构">
       <created>1716217603440</created>
@@ -255,7 +268,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

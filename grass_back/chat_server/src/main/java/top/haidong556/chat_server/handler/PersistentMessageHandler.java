@@ -3,6 +3,7 @@ package top.haidong556.chat_server.handler;
 import io.lettuce.core.RedisException;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import top.haidong556.chat_server.common.UniqueIDGenerator;
 import top.haidong556.chat_server.entity.Conversation;
 import top.haidong556.chat_server.entity.Message;
 import top.haidong556.chat_server.entity.MessagesPackage;
@@ -25,6 +26,7 @@ public class PersistentMessageHandler extends SimpleChannelInboundHandler<Messag
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, MessagesPackage messagesPackage) throws Exception {
         List<Message> messages = messagesPackage.getMessages();
         for(Message m:messages){
+            m.setMessageId(UniqueIDGenerator.generateMessageId(m.getMessageSenderId()));
             try{
                 redisService.writeMessage(m);
                 messageService.addMessage(m);

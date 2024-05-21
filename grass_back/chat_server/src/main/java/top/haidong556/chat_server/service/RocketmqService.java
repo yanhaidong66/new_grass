@@ -16,6 +16,7 @@ import top.haidong556.chat_server.common.GlobalContext;
 import top.haidong556.chat_server.common.codec.MessageCodec;
 import top.haidong556.chat_server.common.codec.PackageCodec;
 import top.haidong556.chat_server.config.MyConfiguration;
+import top.haidong556.chat_server.entity.MessagesPackage;
 
 import java.util.List;
 
@@ -83,8 +84,8 @@ public class RocketmqService implements Runnable{
 
 
     //发送聊天消息
-    public void sendChatMessage(top.haidong556.chat_server.entity.Message m) {
-        Message message = new Message(MyConfiguration.ROCKETMQ_TOPIC, MyConfiguration.ROCKETMQ_CHAT_MESSAGE_TAG+m.getMessageReceiverId(), MessageCodec.encode(m) );
+    public void sendChatMessage(MessagesPackage mp,String topicTag) {
+        Message message = new Message(MyConfiguration.ROCKETMQ_TOPIC, topicTag,mp.encode());
         try {
             SendResult sendResult = producer.send(message);
             System.out.printf("Message sent: %s%n", sendResult);

@@ -17,7 +17,7 @@ public class MessagesPackage {
     public MessagesPackage(){}
 
 
-    public String toString() {
+    public String toJson() {
         ObjectMapper mapper=new ObjectMapper();
         String json=null;
         try {

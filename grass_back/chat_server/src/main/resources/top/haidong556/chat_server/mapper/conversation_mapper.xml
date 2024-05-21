@@ -6,7 +6,7 @@
 
 
     <insert id="addConversation" parameterType="Conversation" useGeneratedKeys="true" keyProperty="conversationId">
-        insert into db_chat_server.t_conversation(conversation_sender_id, conversation_receiver_id, conversation_create_time, conversation_modify_time) values (#{conversationSenderId},#{conversationReceiverId},#{conversationCreateTime},#{conversationModifyTime})
+        insert into db_chat_server.t_conversation(conversation_id,conversation_sender_id, conversation_receiver_id, conversation_create_time, conversation_modify_time) values (#{conversationId},#{conversationSenderId},#{conversationReceiverId},#{conversationCreateTime},#{conversationModifyTime})
     </insert>
 
     <select id="getConversationsBySenderId" resultType="Conversation">

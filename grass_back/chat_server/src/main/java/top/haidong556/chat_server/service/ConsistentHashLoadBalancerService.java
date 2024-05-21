@@ -8,10 +8,17 @@ import java.security.NoSuchAlgorithmException;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class ConsistentHashLoadBalancer {
+public class ConsistentHashLoadBalancerService {
     private ZooKeeperService zooKeeperService=ZooKeeperService.getInstance();
     private final TreeMap<Long,String> circle=new TreeMap<>();
     private final int numberOfReplicas= Integer.valueOf(MyConfiguration.CONSISTENT_HASHING_REPLACAS);
+    private static final ConsistentHashLoadBalancerService instance=new ConsistentHashLoadBalancerService();
+    private ConsistentHashLoadBalancerService(){
+
+    }
+    public static ConsistentHashLoadBalancerService getInstance(){
+        return instance;
+    }
 
     public void putNode(String node){
         for (int i=0;i<numberOfReplicas;i++){

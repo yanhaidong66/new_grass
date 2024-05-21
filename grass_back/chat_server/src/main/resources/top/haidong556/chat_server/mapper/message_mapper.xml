@@ -11,7 +11,7 @@
         select * from t_message where message_conversation_id=#{conversationId}
     </select>
     <insert id="addMessage" parameterType="Message">
-        insert into t_message(message_conversation_id, message_create_time, message_sender_id, message_receiver_id, message_content, message_read) values (#{messageConversationId},#{messageCreateTime},#{messageSenderId},#{messageReceiverId},#{messageContent},#{messageRead})
+        insert into t_message(message_id,message_conversation_id, message_create_time, message_sender_id, message_receiver_id, message_content, message_read) values (#{messageId},#{messageConversationId},#{messageCreateTime},#{messageSenderId},#{messageReceiverId},#{messageContent},#{messageRead})
     </insert>
 
     <select id="getMessagesBySenderId" resultType="Message" parameterType="long">
