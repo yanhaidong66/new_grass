@@ -19,7 +19,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class SendHandler extends SimpleChannelInboundHandler<MessagesPackage> {
     private RocketmqService rocketmqService=RocketmqService.getInstance();
-    private MyConfiguration config=MyConfiguration.getInstance();
     private GlobalContext globalContext=GlobalContext.getInstance();
     private ConsistentHashLoadBalancerService consistentHashLoadBalancerService=ConsistentHashLoadBalancerService.getInstance();
 
@@ -60,7 +59,7 @@ public class SendHandler extends SimpleChannelInboundHandler<MessagesPackage> {
     }
 
     private void sendToMessageQueue(MessagesPackage mp,long receiverId){
-        String topicTag = consistentHashLoadBalancerService.getNode(receiverId);
+        String topicTag = MyConfiguration.ROCKETMQ_CHAT_MESSAGE_TAG_PREFIX+consistentHashLoadBalancerService.getNode(receiverId);
         rocketmqService.sendChatMessage(mp,topicTag);
     }
     private void sendToUserByMyself(MessagesPackage mp,long receiverId){

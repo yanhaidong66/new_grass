@@ -9,4 +9,5 @@ public interface ConversationMapper {
     public List<Conversation> getConversationsBySenderId(long senderId);
     public List<Conversation> getConversationsByReceiverId(long receiverId);
 
+    public Conversation getConversationById(long conversationId);
 }

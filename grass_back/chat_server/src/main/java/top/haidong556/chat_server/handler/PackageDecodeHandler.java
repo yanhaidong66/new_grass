@@ -18,8 +18,9 @@ public class PackageDecodeHandler extends SimpleChannelInboundHandler<WebSocketF
         MessagesPackage messagePackage = null;
         try {
             messagePackage = PackageCodec.decode(payloadBytes);
+            System.out.println(messagePackage.toJson());
         } catch (InvalidProtocolBufferException e) {
-            System.out.println("encode erro");
+            System.out.println("decode error");
             throw new RuntimeException(e);
         }
         System.out.println("-------"+messagePackage);

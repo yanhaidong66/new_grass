@@ -34,4 +34,9 @@ public class ConversationServiceImpl implements ConversationService {
     public List<Conversation> getConversationsByReceiverId(long receiverId) {
         return conversationRepository.getConversationsByReceiverId(receiverId);
     }
+
+    @Override
+    public Conversation getConversationsById(long conversationId) {
+        return conversationRepository.getConversationById(conversationId);
+    }
 }

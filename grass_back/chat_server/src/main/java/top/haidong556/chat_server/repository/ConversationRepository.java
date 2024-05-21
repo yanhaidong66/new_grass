@@ -40,5 +40,12 @@ public class ConversationRepository {
         session.close();
         return conversations;
     }
+    public Conversation getConversationById(long conversationId){
+        SqlSession session = sqlSessionFactory.getSession(false);
+        Conversation conversation = session.getMapper(ConversationMapper.class).getConversationById(conversationId);
+        session.commit();
+        session.close();
+        return conversation;
+    }
 
 }

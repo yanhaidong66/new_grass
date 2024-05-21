@@ -2,14 +2,15 @@ package top.haidong556.chat_server.common;
 import java.time.Instant;
 import java.util.Random;
 
+
 public class UniqueIDGenerator {
     // 定义纪元时间为2024-01-01 00:00:00 UTC
     private static final long EPOCH = Instant.parse("2024-01-01T00:00:00Z").toEpochMilli();
     private static final Random random = new Random();
 
-    // 最高位掩码
-    private static final long CONVERSATION_ID_MASK = 0x0000000000000000L; // 最高位为0
-    private static final long MESSAGE_ID_MASK = 0x8000000000000000L;      // 最高位为1
+    // 掩码
+    private static final long CONVERSATION_ID_MASK = 0x0000000000000000L; // 最高位为0，次高位为0
+    private static final long MESSAGE_ID_MASK = 0x4000000000000000L;      // 最高位为0，次高位为1
 
     public static long generateConversationId(long userId) {
         return generateUniqueId(userId, CONVERSATION_ID_MASK);
@@ -32,11 +33,19 @@ public class UniqueIDGenerator {
         // 生成7位随机数
         long randomNumber = random.nextInt(128);
 
-        // 组合成64位ID并添加最高位掩码
+        // 组合成64位ID并添加掩码
         long uniqueId = (timestamp << 23) | (userId << 7) | randomNumber | idMask;
 
         return uniqueId;
     }
 
+    public static void main(String[] args) {
+        long userId = 12345;
+        long conversationId = generateConversationId(userId);
+        long messageId = generateMessageId(userId);
 
+        System.out.println("Conversation ID: " + conversationId);
+        System.out.println("Message ID: " + messageId);
+    }
 }
+

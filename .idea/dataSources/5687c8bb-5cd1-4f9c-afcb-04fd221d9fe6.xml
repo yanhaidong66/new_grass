@@ -5338,27 +5338,27 @@ mysql&gt; SELECT VERSION(), sys.version_patch();
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="717" parent="304" name="conversation_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="718" parent="304" name="conversation_sender_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="719" parent="304" name="conversation_receiver_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="720" parent="304" name="conversation_create_time">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="721" parent="304" name="conversation_modify_time">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
@@ -5385,27 +5385,27 @@ mysql&gt; SELECT VERSION(), sys.version_patch();
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="727" parent="305" name="message_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="728" parent="305" name="message_conversation_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="729" parent="305" name="message_create_time">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="730" parent="305" name="message_sender_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="731" parent="305" name="message_receiver_id">
-      <DasType>bigint|0s</DasType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>

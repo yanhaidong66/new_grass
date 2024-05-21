@@ -3,9 +3,8 @@ package top.haidong556.chat_server;
 
 import com.alibaba.nacos.api.exception.NacosException;
 import top.haidong556.chat_server.common.GlobalContext;
-import top.haidong556.chat_server.service.NacosService;
-import top.haidong556.chat_server.service.RocketmqService;
-import top.haidong556.chat_server.service.WebSocketService;
+import top.haidong556.chat_server.config.MyConfiguration;
+import top.haidong556.chat_server.service.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,16 +20,18 @@ public class ChatServerApplication {
 //        NacosService nacosService=new NacosService();
 //        Properties config = nacosService.getConfig();
 //        boolean register = nacosService.register();
+        ConsistentHashLoadBalancerService.getInstance().putNode(String.valueOf(MyConfiguration.MYSELF_CHAT_SERVER_ID));
         RocketmqService rocketmqService=RocketmqService.getInstance();
         Thread rocketmqThread=new Thread(rocketmqService);
         rocketmqThread.start();
-        int nettyPort= Integer.parseInt(NETTY_PORT);
-        WebSocketService socketServer=new WebSocketService();
-        socketServer.run(nettyPort);
         try {
             rocketmqThread.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        int nettyPort= Integer.parseInt(NETTY_PORT);
+        WebSocketService socketServer=WebSocketService.getInstance();
+        socketServer.run(nettyPort);
+
     }
 }

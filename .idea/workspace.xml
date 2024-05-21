@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5341d59-91f6-4b36-8441-bf4e69dcfe97" name="更改" comment="完善了一致性哈希环">
+      <change afterPath="$PROJECT_DIR$/grass_back/chat_server/src/test/java/top/haidong556/chat_server/service/RocketmqServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5687c8bb-5cd1-4f9c-afcb-04fd221d9fe6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5687c8bb-5cd1-4f9c-afcb-04fd221d9fe6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/ChatServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/ChatServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/common/UniqueIDGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/common/UniqueIDGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/config/MyConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/config/MyConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/CreateConversationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/CreateConversationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/PackageDecodeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/PackageDecodeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/ResponseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/ResponseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/SendHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/handler/SendHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/mapper/ConversationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/mapper/ConversationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/repository/ConversationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/repository/ConversationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/ConversationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/ConversationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/RocketmqService.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/RocketmqService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/WebSocketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/WebSocketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/ZooKeeperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/ZooKeeperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/impl/ConversationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/impl/ConversationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/top/haidong556/chat_server/mapper/conversation_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/top/haidong556/chat_server/mapper/conversation_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/test/java/top/haidong556/chat_server/common/codec/PackageCodecTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/grass_back/chat_server/src/test/java/top/haidong556/chat_server/common/codec/PackageCodecTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grass_back/chat_server/src/test/java/top/haidong556/chat_server/common/rabbitMq/RabbitMqUtilTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -72,7 +91,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "b52e8b28c35e7cdf93943e9ffbc18a9d",
+    "spring.configuration.checksum": "bc3d1359ee96bab61896d2e02c787d4b",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -124,39 +143,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniqueIDGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.common.UniqueIDGenerator" />
-      <module name="chat_server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.haidong556.chat_server.common.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZooKeeperService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.service.ZooKeeperService" />
-      <module name="chat_server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.haidong556.chat_server.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="chat_server_database.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/grass_back/chat_server/src/main/resources/chat_server_database.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="5687c8bb-5cd1-4f9c-afcb-04fd221d9fe6" />
       <method v="2" />
     </configuration>
-    <configuration name="RedisServiceTest.writeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageCodecTest.encode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chat_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat_server.common.codec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong556.chat_server.common.codec" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.common.codec.PackageCodecTest" />
+      <option name="METHOD_NAME" value="encode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketmqServiceTest.sendChatMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chat_server" />
       <extension name="coverage">
         <pattern>
@@ -164,9 +173,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.haidong556.chat_server.handler.util" />
-      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.handler.util.RedisServiceTest" />
-      <option name="METHOD_NAME" value="writeMessage" />
+      <option name="PACKAGE_NAME" value="top.haidong556.chat_server.service" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.service.RocketmqServiceTest" />
+      <option name="METHOD_NAME" value="sendChatMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketmqServiceTest.sendMySQLWriteFailureMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chat_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.chat_server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong556.chat_server.service" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.chat_server.service.RocketmqServiceTest" />
+      <option name="METHOD_NAME" value="sendMySQLWriteFailureMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,10 +228,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.ChatServerApplication" />
+        <item itemvalue="JUnit.RocketmqServiceTest.sendChatMessage" />
+        <item itemvalue="JUnit.RocketmqServiceTest.sendMySQLWriteFailureMessage" />
         <item itemvalue="数据库脚本.chat_server_database.sql" />
-        <item itemvalue="应用程序.UniqueIDGenerator" />
-        <item itemvalue="应用程序.ZooKeeperService" />
-        <item itemvalue="JUnit.RedisServiceTest.writeMessage" />
+        <item itemvalue="JUnit.PackageCodecTest.encode" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +266,8 @@
       <workItem from="1716014202445" duration="603000" />
       <workItem from="1716105029246" duration="3848000" />
       <workItem from="1716115015695" duration="24832000" />
-      <workItem from="1716218220438" duration="7437000" />
+      <workItem from="1716218220438" duration="7894000" />
+      <workItem from="1716265251233" duration="15666000" />
     </task>
     <task id="LOCAL-00001" summary="netty服务器的优化架构">
       <created>1716217603440</created>
@@ -310,5 +336,16 @@
     <MESSAGE value="netty服务器的优化架构" />
     <MESSAGE value="完善了一致性哈希环" />
     <option name="LAST_COMMIT_MESSAGE" value="完善了一致性哈希环" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grass_back/chat_server/src/main/java/top/haidong556/chat_server/service/RocketmqService.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

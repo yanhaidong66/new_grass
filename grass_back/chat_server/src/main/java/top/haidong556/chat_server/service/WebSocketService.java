@@ -16,6 +16,14 @@ import top.haidong556.chat_server.handler.util.HalfPackageDecodeHandler;
 
 
 public class WebSocketService {
+    public static final WebSocketService instance=new WebSocketService();
+
+    private WebSocketService(){
+
+    }
+    public static WebSocketService getInstance(){
+        return instance;
+    }
 
     public void run(int port) {
         EventLoopGroup bossGroup=new NioEventLoopGroup(2);
@@ -38,7 +46,7 @@ public class WebSocketService {
                             pipeline.addLast("createConversationHandler",new CreateConversationHandler());
                             pipeline.addLast("persistentMessageHandler",new PersistentMessageHandler());
                             pipeline.addLast("sendHandler",new SendHandler());
-//                            pipeline.addLast("packageEncodeHandler",new PackageEncodeHandler());
+                            //pipeline.addLast("packageEncodeHandler",new PackageEncodeHandler());
                             pipeline.addLast("responseHandler",new ResponseHandler());
 
                         }

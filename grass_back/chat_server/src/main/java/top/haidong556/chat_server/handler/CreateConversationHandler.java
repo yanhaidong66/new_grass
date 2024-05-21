@@ -18,16 +18,22 @@ public class CreateConversationHandler extends SimpleChannelInboundHandler<Messa
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, MessagesPackage messagesPackage) throws Exception {
         List<Message> messages = messagesPackage.getMessages();
-        if(messagesPackage.getType().equals("createConversation")){
-            Message message= messages.get(0);
-            long messageSenderId = message.getMessageSenderId();
-            long messageReceiverId = message.getMessageReceiverId();
-            long time = System.currentTimeMillis();
-            Conversation conversation=new Conversation(messageSenderId,messageReceiverId,time,time);
-            conversation.setConversationId(UniqueIDGenerator.generateConversationId(messageSenderId));
-            conversationService.addConversation(conversation);
-            System.out.println("id"+conversation.getConversationId());
-            channelHandlerContext.writeAndFlush("create successfully".getBytes());
+        if(messagesPackage.getType().equals("message")){
+            for(Message message:messages){
+                long messageConversationId = message.getMessageConversationId();
+                if(messageConversationId==0||conversationService.getConversationsById(messageConversationId)==null){
+                    long messageSenderId = message.getMessageSenderId();
+                    long messageReceiverId = message.getMessageReceiverId();
+                    long time = System.currentTimeMillis();
+                    Conversation conversation=new Conversation(messageSenderId,messageReceiverId,time,time);
+                    conversation.setConversationId(UniqueIDGenerator.generateConversationId(messageSenderId));
+                    conversationService.addConversation(conversation);
+                    System.out.println("create conversation id:"+conversation.getConversationId());
+                    message.setMessageConversationId(conversation.getConversationId());
+                }
+
+            }
+
         }
 
         channelHandlerContext.fireChannelRead(messagesPackage);
