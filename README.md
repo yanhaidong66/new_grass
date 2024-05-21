@@ -1,5 +1,4 @@
-# 二手书交易平台
-基于springboot，springcloud和vue的二手书交易平台。
+# netty的聊天
 
 ## oauth授权平台
 使用springsecurity，oauth，redis，mybatis和mysql数据库搭建的授权平台。  
