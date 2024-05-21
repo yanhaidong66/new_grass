@@ -13,12 +13,14 @@ import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.common.message.MessageExt;
 import org.apache.rocketmq.remoting.exception.RemotingException;
 import top.haidong556.chat_server.common.GlobalContext;
-import top.haidong556.chat_server.common.codec.MessageCodec;
-import top.haidong556.chat_server.common.codec.PackageCodec;
 import top.haidong556.chat_server.config.MyConfiguration;
 import top.haidong556.chat_server.entity.MessagesPackage;
 
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class RocketmqService implements Runnable{
     private GlobalContext globalContext=GlobalContext.getInstance();
@@ -34,7 +36,7 @@ public class RocketmqService implements Runnable{
         consumer.setNamesrvAddr(MyConfiguration.ROCKETMQ_NAMESRV_ADDR);
 
         try {
-            consumer.subscribe(MyConfiguration.ROCKETMQ_TOPIC, MyConfiguration.ROCKETMQ_CHAT_MESSAGE_TAG+MyConfiguration.MYSELF_CHAT_SERVER_ID);
+            consumer.subscribe(MyConfiguration.ROCKETMQ_TOPIC, MyConfiguration.ROCKETMQ_CHAT_MESSAGE_MYSELF_TAG);
         } catch (MQClientException e) {
             throw new RuntimeException(e);
         }
@@ -42,10 +44,40 @@ public class RocketmqService implements Runnable{
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 for (MessageExt msg : msgs) {
-                    String s = new String(msg.getBody());
-                    System.out.printf("%s Receive New Messages: %s %n", Thread.currentThread().getName(), );
-                    Channel channel = globalContext.getUserChannelMap().get();
-                    channel.writeAndFlush();
+                    MessagesPackage messagesPackage = MessagesPackage.decode(msg.getBody());
+                    if (messagesPackage.getType().equals("receiveMessage")){
+                        List<top.haidong556.chat_server.entity.Message> messages = messagesPackage.getMessages();
+                        Map<Long,List<top.haidong556.chat_server.entity.Message>> map=new HashMap<>();
+                        for (top.haidong556.chat_server.entity.Message m: messages) {
+                            long messageReceiverId = m.getMessageReceiverId();
+                            if (map.containsKey(messageReceiverId)==true){
+                                map.get(messageReceiverId).add(m);
+                            }else{
+                                List<top.haidong556.chat_server.entity.Message> l=new LinkedList<>();
+                                l.add(m);
+                                map.put(messageReceiverId,l);
+                            }
+                        }
+                        for(Map.Entry<Long, List<top.haidong556.chat_server.entity.Message>> entry : map.entrySet()){
+                            Long receiverId = entry.getKey();
+                            List<top.haidong556.chat_server.entity.Message> messageList = entry.getValue();
+                            MessagesPackage mp=new MessagesPackage();
+                            mp.setType("receiveMessage");
+                            mp.setMessages(messageList);
+                            mp.setTimestamp(System.currentTimeMillis());
+                            mp.setMessageNum(messageList.size());
+                            ConcurrentHashMap<Long, Channel> userChannelMap = globalContext.getUserChannelMap();
+                            if(userChannelMap.containsKey(receiverId)==true){
+                                sendToUserByMyself(mp,receiverId);
+                            }
+                            else{
+                                //SendNotifications(mp,receiverId);
+                            }
+                        }
+
+                    }
+
+
                 }
 
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
@@ -92,6 +124,11 @@ public class RocketmqService implements Runnable{
         } catch (MQClientException | RemotingException | MQBrokerException | InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private void sendToUserByMyself(MessagesPackage mp,long receiverId){
+        Channel channel = globalContext.getUserChannelMap().get(receiverId);
+        channel.writeAndFlush(mp.encode());
     }
 
 

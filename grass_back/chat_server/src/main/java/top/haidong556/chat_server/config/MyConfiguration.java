@@ -23,7 +23,7 @@ public class MyConfiguration {
         ROCKETMQ_CONSUMER_GROUP= config.getProperty("rocketmq_consumer_group");
         ROCKETMQ_PRODUCER_GROUP= config.getProperty("rocketmq_producer_group");
         ROCKETMQ_TOPIC= config.getProperty("rocketmq_topic");
-        ROCKETMQ_CHAT_MESSAGE_TAG= config.getProperty("rocketmq_chat_message_tag");
+        ROCKETMQ_CHAT_MESSAGE_MYSELF_TAG= config.getProperty("rocketmq_chat_message_tag")+ config.getProperty("chat_server_id");
         ROCKETMQ_MYSQL_FAIL_TAG=config.getProperty("rocketmq_mysql_fail_tag");
     }
     public static final int MYSELF_CHAT_SERVER_ID;
@@ -38,7 +38,7 @@ public class MyConfiguration {
     public static final String ROCKETMQ_CONSUMER_GROUP;
     public static final String ROCKETMQ_PRODUCER_GROUP;
     public static final String ROCKETMQ_TOPIC;
-    public static final String ROCKETMQ_CHAT_MESSAGE_TAG;
+    public static final String ROCKETMQ_CHAT_MESSAGE_MYSELF_TAG;
     public static final String ROCKETMQ_MYSQL_FAIL_TAG;
 
     private static final MyConfiguration instance=new MyConfiguration();
